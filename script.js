@@ -175,10 +175,8 @@ gsap.from(".page3-part3 img", {
     start: "top 80%",
     end: "top 50%",
     scrub:4,
-    
   }
 })
-
 
 var box = document.querySelectorAll(".box");
 box.forEach(function (elem) {
