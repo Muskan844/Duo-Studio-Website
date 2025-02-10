@@ -184,7 +184,7 @@ marquee {
   width: 50vw;
   margin-top: 20vw;
 }
-.page3-part2 video {
+.page3-part2 > video {
   width: 35vw;
   height: 40vw;
   margin-top: 0;

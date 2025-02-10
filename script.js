@@ -130,9 +130,9 @@ let tl3 = gsap.timeline({
 tl3.to(".main", {
   backgroundColor: "#000",
 });
-gsap.from(".page3-part2  img", {
+gsap.from(".page3-part2 img", {
   x: -150,
-  duration: 2,
+  duration: 3,
   scrollTrigger: {
     trigger: ".page3-part2 img",
     scroller: ".main",
@@ -142,9 +142,9 @@ gsap.from(".page3-part2  img", {
     
   }
 })
-gsap.from(".page3-part2  video", {
+gsap.from(".page3-part2 video", {
   x: 150,
-  duration: 2,
+  duration: 3,
   scrollTrigger: {
     trigger: ".page3-part2 video",
     scroller: ".main",
@@ -154,9 +154,9 @@ gsap.from(".page3-part2  video", {
     
   }
 })
-gsap.from(".page3-part3  video", {
+gsap.from(".page3-part3 video", {
   x: -150,
-  duration: 2,
+  duration: 3,
   scrollTrigger: {
     trigger: ".page3-part3 video",
     scroller: ".main",
@@ -166,9 +166,9 @@ gsap.from(".page3-part3  video", {
     
   }
 })
-gsap.from(".page3-part3  img", {
+gsap.from(".page3-part3 img", {
   x: 150,
-  duration: 2,
+  duration: 3,
   scrollTrigger: {
     trigger: ".page3-part3 img",
     scroller: ".main",
