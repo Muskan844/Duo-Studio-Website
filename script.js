@@ -100,42 +100,7 @@ tll.to(
   },
   "anim"
 );
-// kvhkuhv
-// let sa = gsap.timeline({
-//   scrollTrigger: {
-//     trigger: ".page3 h1",
-//     scroller: "body",
-//     markers:true,
-//     start: "top 90%",
-//     end:"top 50%",
-//     scrub: 1, 
-//   },
-// });
-// sa.from(".page3 h1", {
-//   duration: 2,
-//   opacity:0,
-//   y:20,
-//   stagger:0.3,
-// });
 
-
-// gsap.from(".page5 h2", {
-//   duration: 2,
-//   opacity:0,
-//   y:20,
-//   stagger:0.3,
-//   scrollTrigger: {
-//     trigger: ".page5 h2",
-//     scroller: "body",
-//     markers:true,
-//     start: "top 90%",
-//     end:"top 50%",
-//     scrub: 1, 
-//     //animation purely based on scrolling , between start and end
-//     // pin:true,
-//   }, //write in camel case and paste scrollTrigger cdn after gsap cdn, otherwise it will not work
-  
-// });
 let tl2 = gsap.timeline({
   scrollTrigger: {
     trigger: ".page1",
@@ -156,8 +121,8 @@ let tl3 = gsap.timeline({
   scrollTrigger: {
     trigger: ".page3",
     scroller: ".main",
-    markers:true,
-    start: "top -120%",
+    // markers:true,
+    start: "top -130%",
     end: "top 210%",
     scrub: 2,
   },
@@ -165,6 +130,55 @@ let tl3 = gsap.timeline({
 tl3.to(".main", {
   backgroundColor: "#000",
 });
+gsap.from(".page3-part2  img", {
+  x: -150,
+  duration: 2,
+  scrollTrigger: {
+    trigger: ".page3-part2 img",
+    scroller: ".main",
+    start: "top 80%",
+    end: "top 50%",
+    scrub:4,
+    
+  }
+})
+gsap.from(".page3-part2  video", {
+  x: 150,
+  duration: 2,
+  scrollTrigger: {
+    trigger: ".page3-part2 video",
+    scroller: ".main",
+    start: "top 80%",
+    end: "top 50%",
+    scrub:4,
+    
+  }
+})
+gsap.from(".page3-part3  video", {
+  x: -150,
+  duration: 2,
+  scrollTrigger: {
+    trigger: ".page3-part3 video",
+    scroller: ".main",
+    start: "top 80%",
+    end: "top 50%",
+    scrub:4,
+    
+  }
+})
+gsap.from(".page3-part3  img", {
+  x: 150,
+  duration: 2,
+  scrollTrigger: {
+    trigger: ".page3-part3 img",
+    scroller: ".main",
+    start: "top 80%",
+    end: "top 50%",
+    scrub:4,
+    
+  }
+})
+
 
 var box = document.querySelectorAll(".box");
 box.forEach(function (elem) {
