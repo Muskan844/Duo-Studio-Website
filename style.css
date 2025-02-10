@@ -140,7 +140,7 @@ marquee {
   /* background-color: blue; */
   width: 24%;
 }
-.page2-left>h2 {
+.page2-left > h2 {
   font-size: 4vw;
   font-weight: 300;
   line-height: 4vw;
@@ -220,7 +220,7 @@ marquee {
   /* background-color: blue; */
   position: relative;
   z-index: 9;
-  & span{
+  & span {
     color: #edbfff;
   }
 }
@@ -295,6 +295,7 @@ marquee {
   width: 100%;
   padding: 0 7.1vw;
   background-color: #edbfff;
+  position: relative;
 }
 .foo1 {
   height: 75vh;
@@ -302,6 +303,7 @@ marquee {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
   & h1 {
     font-size: 7.5vw;
     color: #000;
@@ -320,16 +322,16 @@ marquee {
     font-weight: 600;
   }
 }
-& .foo2
-  { height: 25vh;
-    width: 100%;
-    color: #000;
-    position: relative;
-    & h4{
-      font-size: 1.6vw;
-    }
-    & h5{
-        position: absolute;
-        bottom: 30%;
-    }
+.foo2 {
+  height: 25vh;
+  width: 100%;
+  color: #000;
+  position: relative;
+  & h4 {
+    font-size: 1.6vw;
   }
+  & h5 {
+    position: absolute;
+    bottom: 30%;
+  }
+}
